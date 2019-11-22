@@ -1,0 +1,90 @@
+/* DO NOT MODIFY. Add your code below .App. */
+
+body {
+  padding: 10px;
+}
+
+#root {
+  background-color: white;
+  box-sizing: border-box;
+  border: solid black 1px;
+  padding: 10px;
+  width: 332px;
+  min-height: 160px;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Add code after this line */
+ul {
+  margin: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0;
+}
+li {
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  width: calc(100% / 3);
+  height: 120px;
+  text-align: center;
+}
+input {
+  width: 200px;
+  margin-right: 5px;
+}
+.color-block {
+  width: 96px;
+  height: 100px;
+  border: 1px solid #000;
+  margin-right: 5px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 700ms linear;
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 700ms linear;
+}
